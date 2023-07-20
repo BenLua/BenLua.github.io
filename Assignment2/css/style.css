@@ -54,27 +54,34 @@
     text-align: left;
   }
 }
+
 /*==========================================================================*/
 
 /*==========================================================================*/
 /*designing the intro section*/
-#intro{
-  padding-left: 16px;
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-}
 
 #introPara {
-  min-width: 300px;
-  max-width: 400px;
-  text-align: start;
+  text-align: center;
+  font-size: large;
 }
 
 #introPic{
-  min-width: 400px;
-  max-width: 100%;
   height: auto;
+  max-width: 100%
+}
+
+/*==========================================================================*/
+
+/*==========================================================================*/
+/*designing the history section*/
+.histPara {
+  text-align: center;
+  font-size: large;
+}
+
+#histPic {
+  height: auto;
+  max-width: 100%
 }
 
 /*==========================================================================*/
@@ -82,4 +89,20 @@
 /*==========================================================================*/
 body {
   margin: 0;
+  background-color: black;
+}
+
+.BGimg{
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 60%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
