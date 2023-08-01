@@ -1,10 +1,10 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"> <!--this is to link css-->
-        <script src="js/javascript.js"></script>
         <title>Dragon Boat</title>
     </head>
     <body>
@@ -14,11 +14,11 @@
             <a href="#training">Training Regime & Physical Health</a>
             <a href="#mental">Mental Health</a>
             <a href="javascript:void(0);" class="icon" onclick="NavBarMenu()">
-              <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"></i>
             </a>
         </div>
         <img src="images/dragonboat.jpg" class="BGimg">
-        <div class="content">
+        <div class="content" id="intro">
             <h1>Introduction to Dragon Boat</h1>
             <div id="introPara">
                 <p>
@@ -38,7 +38,7 @@
                 <img src="images/introPic.jpg" id="intropic">
             </div>
         </div>
-        <div class="content">
+        <div class="content" id="history">
             <h1>History & Culture</h1>
             <div class="histPara">
                 <p>
@@ -50,29 +50,77 @@
                     name ‘dragon boat racing’.
                 </p>
             </div>
-            <div id="histPic">
-                <img src="images/histPic.png" id="histpic">
+
+            <div class="slideshow-hist">
+                <div class="slides fade">
+                    <div class="numbertext">1 / 2</div>
+                        <img src="images/histPic.png" style="width:100%">
+                    <div class="text">Drawing of a Dragon Boat event</div>
+                </div>
+                <div class="slides fade">
+                    <div class="numbertext">2 / 2</div>
+                        <img src="images/histPic2.png" style="width:100%">
+                    <div class="text" style="color:black">An olden-days Dragon Boating Festival held in China</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+
             <div class="histPara">
                 <p>
                     The story of dragon boats evolved over the years and it involved the famous 
                     poet Qu Yuan who threw himself in the Miluo River after being framed and realising 
                     that his motherland has been damaged. He felt so much upset and sorrow about 
-                    his country that on lunar May fifth he ended his life (If you want to read more 
-                    about Qu Yuan’s story and his death click here.  This tragic event transformed 
+                    his country that on lunar May fifth he ended his life. This tragic event transformed 
                     into a festival where people paddled boats to drive fishes away and fed the water 
                     creatures with Zongzi (Chinese rice dish wrapped in bamboo leaves) so that 
-                    Qu Yuan’s body would not become their dinner. The legend of Qu Yuan became a well-known 
+                    Qu Yuan’s body would not become their dinner. 
+                </p>
+            </div>
+
+            <div class="slideshow-hist-auto">
+                <div class="Autoslides Autofade">
+                    <div class="numbertext">1 / 3</div>
+                        <img src="images/zongzi.png" style="width:100%">
+                    <div class="text">
+                        A traditionally made ZongZi (or Bak Zhang)
+                    </div>
+                </div>
+                <div class="Autoslides Autofade">
+                    <div class="numbertext">2 / 3</div>
+                        <img src="images/zongzi2.png" style="width:100%">
+                    <div class="text">
+                        Two Senior ladies skillfully wrapping Zong Zi
+                    </div>
+                </div>
+                <div class="Autoslides Autofade">
+                    <div class="numbertext" style="color:black;">3 / 3</div>
+                        <img src="images/QuYuan.png" style="width:100%">
+                    <div class="text" style="color:black">
+                        A drawing of Qu Yuan
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="histPara">
+                <p>
+                    The legend of Qu Yuan became a well-known 
                     story in China and other Asian countries and now the Dragon Boat Festivals are a popular 
                     sport event enjoyed in all parts of the world.
                 </p>
             </div>
         </div>
-        <div class="content">
+        <div class="content" id="training">
             <h1>Training Regime & Physical Health</h1>
         </div>
-        <div class="content">
+        <div class="content" id="mental">
             <h1>Mental Health</h1>
         </div>
+        <script src="js/javascript.js"></script>
     </body>
 </html>
