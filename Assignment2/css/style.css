@@ -62,14 +62,20 @@
 
 /*==========================================================================*/
 /*===================designing the intro section============================*/
-#introPara {
+.introPara {
   text-align: center;
   font-size: large;
 }
 
+.introPic {
+  display: flex;
+  justify-content: center;
+}
+
 #introPic{
   height: auto;
-  max-width: 100%
+  max-width: 100%;
+  justify-content: center;
 }
 
 /*==========================================================================*/
@@ -174,6 +180,13 @@ img {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+/*==========================================================================*/
+/*==================designing the history section===========================*/
+.trainingPara {
+  text-align: center;
+  font-size: large;
 }
 
 /*==========================================================================*/
