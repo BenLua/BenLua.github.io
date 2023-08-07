@@ -2,6 +2,7 @@
 function NavBarMenu() {
     var x = document.getElementById("navBar");
     if (x.className === "TopNav") {
+      /*add "responsive" to TopNav class name*/
       x.className += " responsive";
     } 
     else {
@@ -53,3 +54,6 @@ function showSlidesAuto() {
   slides[slideIndexAuto-1].style.display = "block";
   setTimeout(showSlidesAuto, 5000); // Change image every 5 seconds
 }
+
+/*slideshow and auto slideshow: https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+/*Navigation Bar: https://www.w3schools.com/css/css_navbar.asp */
